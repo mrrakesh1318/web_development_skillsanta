@@ -11,3 +11,5 @@ function Fibonacci(n){
 }
 
 Fibonacci(8);
+
+document.write("<hr>");
