@@ -1,14 +1,15 @@
+array = [];
 function insert(){
-    let k = 0;
-    let array = [];
     item = document.getElementById("val").value;
     array.unshift(item);
-    return array;
+    document.getElementById("val").value = '';
 }
 
+//array = array.reverse();
+
 function display(){
-    array = insert();
     for (i = 0; i < array.length; i++){
         document.write("Element "+i+" = "+array[i]);
+        document.write("<br>");
     }
 }
