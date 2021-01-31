@@ -1,18 +1,12 @@
 function date_diff_indays(date1, date2){
-    let d1 = date1.split('/');
-    let d2 = date2.split('/');
-    //if()
-    if(d1[2] == d2[2]){
-    // diff = ;    
-    }
-    //diff =Number(d1[1])-Number(d2[1]);
+    let d1 = Date.parse(date1);
+    let d2 = Date.parse(date2);
 
-
-    console.log(typeof(d3[0]));
-    console.log(d3);
-    //console.log(diff);
-    // console.log(Number(d1[0]));
-    //console.log(date1+" "+date2);
-    //console.log(d1+" "+d2);
+    diff = d2-d1;
+    let diff_days = (diff)/(1000*60*60*24);
+    // date = new Date(diff);
+    // console.log(date);
+    // console.log(diff);
+    console.log(diff_days+" days");
 
 }
